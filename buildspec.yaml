@@ -4,6 +4,7 @@ phases:
     commands:
       - echo BUILD ENVIRONMENT
       - cd frontend
+      - echo $S3_FRONTEND_URL
       - aws s3 sync . $S3_FRONTEND_URL
 
 artifacts:
